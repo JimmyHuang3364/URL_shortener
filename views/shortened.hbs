@@ -1,9 +1,10 @@
 <div style="text-align: center;">
   <h3 class="my-3">Success! Please use this link:</h3>
-  <a href="http://localhost:3000/{{ shortURL }}" class="font-weight-bold">http://localhost:3000/{{ shortURL }}</a>
+  {{!-- <a href="http://localhost:3000/{{ shortURL }}" class="font-weight-bold" style="display: none;">http://localhost:3000/{{ shortURL }}</a> --}}
+  <a href="http://localhost:3000/{{ shortURL }}"><input type="text" class="URLstring bg-white text-primary" style="text-align: center;" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" value="http://localhost:3000/{{ shortURL }}" id="URLstring" readonly></a>
   <div>
     <a class="btn btn-outline-secondary mt-3 mr-5" href="/">Previous</a>
-    <button type="button" class="btn btn-primary mt-3">Copy</button>
+    <button type="button" class="btn btn-primary mt-3" id="copyButton">Copy</button>
   </div>
 </div>
 

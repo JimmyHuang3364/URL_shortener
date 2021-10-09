@@ -10,8 +10,8 @@ router.get('/:shortURLdata', (req, res) => {
   const shortURLdata = req.params.shortURLdata
   URLshortener.findOne({ shortURL: shortURLdata })
     .then((URLdata) => {
-      console.log('asdasd')
-      console.log(URLdata.originalURL)
+      // console.log('asdasd')
+      console.log(`跳轉至${URLdata.originalURL}`)
       res.redirect(`${URLdata.originalURL}`)
     })
 })
